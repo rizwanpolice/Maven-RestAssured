@@ -20,7 +20,7 @@ public class Authentication {
         Response response = request.auth().oauth2("auth token").post("/User");
 
         // This is for basic authentication token
-        Response response1 = request.auth().basic("username","password").post("/User");
+        Response response1 = request.auth().basic("username","password:").post("/User");
 
     }
 }
